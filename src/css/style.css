@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #2980b9, #9b385a);
+}
+
+body.dark-body {
+  background: linear-gradient(120deg, #333, #33224d);
+}
+
+.container {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: 100vh;
+}
+
+.container #login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background: antiquewhite;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container #login-form .form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container #login-form .form-header h1 {
+  color: #333;
+  font-weight: 600;
+  font-size: 35px;
+  position: relative;
+}
+
+.container #login-form .form-header h1::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 3px;
+  background: #60389b;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.container #login-form .form-header i {
+  color: #333;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.container #login-form .form-header i:hover {
+  transform: scale(1.2);
+}
+
+#social-medias {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+#social-medias img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#social-medias img:hover {
+  transform: scale(1.2);
+}
+
+#inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#inputs .input-box label {
+  color: #333;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+#inputs .input-box .input-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: text;
+  border-bottom: 1px solid #333;
+}
+
+#inputs .input-box .input-field input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 400;
+  width: 260px;
+}
+
+#inputs .input-box .input-field i {
+  color: #333;
+  font-size: 18px;
+}
+
+button#submit {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background: #60389b;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button#submit:hover {
+  transform: scale(1.01);
+}
+
+#forgot-password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#forgot-password a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#forgot-password a:hover {
+  transform: scale(1.01);
+}
+
+.dark#login-form {
+  background: #333;
+  color: #fff;
+}
+
+.dark#login-form .input-field input,
+.dark#login-form .input-field i,
+.dark#login-form .form-header h1,
+.dark#login-form .form-header i,
+.dark#login-form .input-box label,
+.dark#login-form #forgot-password a {
+  color: #fff;
+}
+
+.dark#login-form .input-field {
+  border-bottom: 1px solid antiquewhite;
+}

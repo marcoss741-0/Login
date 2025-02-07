@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <form id="login-form">
+        <div class="form-header">
+          <h1>Login</h1>
+          <i id="theme-icon" class="fa-solid fa-moon"></i>
+        </div>
+
+        <div id="social-medias">
+          <a href="#"
+            ><img src="src/images/facebook.png" alt="Facebook Logo"
+          /></a>
+          <a href="#"><img src="src/images/google.png" alt="Google Logo" /></a>
+          <a href="#"><img src="src/images/github.png" alt="Github Logo" /></a>
+        </div>
+
+        <div id="inputs">
+          <div class="input-box">
+            <label for="name">
+              Nome
+              <div class="input-field">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="name" id="name" />
+              </div>
+            </label>
+          </div>
+          <div class="input-box">
+            <label for="email">
+              E-mail
+              <div class="input-field">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="mail" name="email" id="email" />
+              </div>
+            </label>
+          </div>
+          <div class="input-box">
+            <label for="password">
+              Senha
+              <div class="input-field">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" name="password" id="password" />
+              </div>
+            </label>
+          </div>
+
+          <button id="submit" type="submit">Entrar</button>
+          <div id="forgot-password">
+            <a href="#">Esqueceu sua senha?</a>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
